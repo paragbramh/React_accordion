@@ -5,6 +5,7 @@ import MyAccordion from "./MyAccordion";
 
 const Accordion=()=>{
 
+    // eslint-disable-next-line
     const [data,setData] = useState(questions);
 
     return(
@@ -14,7 +15,7 @@ const Accordion=()=>{
            
             {
                 data.map((curElem)=>{
-                    const {id,question,answer} = curElem;
+                   
                     return <MyAccordion key={curElem.id} {...curElem}/>
                 })
             }
